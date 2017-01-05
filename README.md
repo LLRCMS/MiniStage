@@ -14,8 +14,8 @@ cd MiniStage
 source setup_env.sh
 ./init.py
 ```
-The last command will for ask a port number to connect to the Jupyter notebook. It can be for instance any number between 8000 and 9000. It will then ask for a password that will be used to connect to the notebook.  
-Launch the Jupyter server:
+The last command will ask for a port number (e.g. in that case any number between 8000 and 9000) as well as a password used to connect to the Jupyter server.  
+Then to launch the Jupyter server, type:
 ```bash
 ./launch_notebook.sh
 ```
@@ -26,13 +26,12 @@ Host jupyter
   User YOUR_USER_NAME
   LocalForward CHOSEN_PORT localhost:CHOSEN_PORT
 ```
-And connect to the host `jupyter`:
+And connecting to the host `jupyter`:
 ```bash
 ssh jupyter
 ```
-Finally, connect to `http://localhost:CHOSEN_PORT` from your favorite browser.
 
-Next time, once eveything is already initialized, the steps are:
+Next time, once everything is already initialized, the steps are:
 ```bash
 # On polui03
 cd MiniStage
@@ -41,3 +40,12 @@ source setup_env.sh
 # On a local machine
 ssh jupyter
 ```
+
+## Editing and running code
+Editing and running code is done inside a browser connected to the Jupyter server at the following address:
+```
+http://localhost:CHOSEN_PORT
+```
+Click on the `hzz4l_analysis.ipynb` file to open the notebook and start editing code.
+
+
