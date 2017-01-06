@@ -14,7 +14,7 @@ cd MiniStage
 source setup_env.sh
 ./init.py
 ```
-The last command will ask for a port number (e.g. in that case any number between 8000 and 9000) as well as a password used to connect to the Jupyter server.  
+The last command will ask for a port number (e.g. it can be in that case any number between 8000 and 9000) as well as a password used to connect to the Jupyter server.  
 Then to launch the Jupyter server, type:
 ```bash
 ./launch_notebook.sh
