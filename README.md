@@ -13,21 +13,24 @@ ssh -Y USERNAME@llrgate02.in2p3.fr
 # from llrgate02
 ssh -Y USERNAME@polui03.in2p3.fr
 ```
-Install and initialize the working area:
+Create a working area, install and initialize the working area:
 ```bash
 # On polui03
+mkdir -p ~/PHY584/CMSHZZ/2018/YOURNAME
 git clone https://github.com/LLRCMS/MiniStage.git MiniStage
 cd MiniStage
 source setup_env.sh
 ./init.py
 ```
 The last command will ask for a port number (e.g. it can be for instance any number between 7000 and 10000) as well as a password used to connect to the Jupyter server. The port number has to be different for each person.
+
 Then to launch the Jupyter server, type:
 ```bash
 # On polui03
 ./launch_notebook.sh
 ```
 (In case the chosen port is already used it will chose an other random port and the number will be written in the command output.)
+
 To connect to the server from your computer, the server port needs to be forwarded through ssh. On Linux machines this can be done with the following lines in `.ssh/config`:
 ```
 # Lines to be put in .ssh/config on your computer
