@@ -21,12 +21,13 @@ cd MiniStage
 source setup_env.sh
 ./init.py
 ```
-The last command will ask for a port number (e.g. it can be in that case any number between 8000 and 9000) as well as a password used to connect to the Jupyter server.  
+The last command will ask for a port number (e.g. it can be for instance any number between 7000 and 10000) as well as a password used to connect to the Jupyter server. The port number has to be different for each person.
 Then to launch the Jupyter server, type:
 ```bash
 # On polui03
 ./launch_notebook.sh
 ```
+(In case the chosen port is already used it will chose an other random port and the number will be written in the command output.)
 To connect to the server from your computer, the server port needs to be forwarded through ssh. On Linux machines this can be done with the following lines in `.ssh/config`:
 ```
 # Lines to be put in .ssh/config on your computer
@@ -41,6 +42,7 @@ And connecting to the host `jupyter`:
 # On your computer
 ssh jupyter
 ```
+Before leaving, shut down the jupyter server with `Ctrl-C` in the terminal where it is running.
 
 Next time, once everything is already initialized, the steps are:
 ```bash
