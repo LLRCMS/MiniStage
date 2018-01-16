@@ -17,6 +17,7 @@ Create a working area, install and initialize the working area:
 ```bash
 # On polui03
 mkdir -p ~/PHY584/CMSHZZ/2018/YOURNAME
+cd ~/PHY584/CMSHZZ/2018/YOURNAME/
 git clone https://github.com/LLRCMS/MiniStage.git MiniStage
 cd MiniStage
 source setup_env.sh
