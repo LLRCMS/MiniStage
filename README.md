@@ -1,6 +1,6 @@
 # Mini analysis with CMS data
 
-The goal will be to study and analyse simulation data and real data from CMS in the context of the HZZ4l analysis. This study will be done in Python with the [ROOT library](https://root.cern.ch/) and [Jupyter notebooks](http://jupyter.org/).  
+The goal will be to study and analyse simulation data and real data from CMS in the context of the [HZZ4l analysis](https://arxiv.org/abs/1706.09936). This study will be done in Python with the [ROOT library](https://root.cern.ch/) and [Jupyter notebooks](http://jupyter.org/).  
 ROOT is a data analysis library written in C++ and widely used in the HEP community. It is possible to use ROOT in Python as well, which will be done here.  
 Jupyter is a web application that allows you to create notebooks containing code, text and data visualizations. You will work with Jupyter notebooks running on LLR machines, where the CMS HZZ4l data are located.  
 
